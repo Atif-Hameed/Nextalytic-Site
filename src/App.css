@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+.hero-bg {
+  background-image: url('./asset/hero-bg.svg');
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slick-prev,
+.slick-next {
+    position: absolute !important ;
+    top: 114% !important ;
+    left: 0 !important ;
+    background-color: transparent !important ;
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    border-radius: 50%;
+    padding: 10px !important;
+    border: 1px solid rgb(80, 80, 80) !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.slick-prev {
+    left: 1.5rem !important ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.slick-next {
+    left: 7rem !important ;
 }
 
-.App-link {
-  color: #61dafb;
+.slick-prev:hover,.slick-next:hover{
+    background-color: #FB9170 !important;
+    color: white !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.line-h{
+  line-height: 3.2rem;
+}
+
+@media(min-width:1024) {
+  .line-h{
+    line-height:normal;
   }
 }
