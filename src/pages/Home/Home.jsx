@@ -5,6 +5,8 @@ import About from '../../components/About'
 import CaseStudies from '../../components/CaseStudies'
 import Modalities from '../../components/Modalities'
 import Testimonials from '../../components/Testimonials'
+import Embark from '../../components/Embark'
+import Footer from '../../components/Footer'
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
         <CaseStudies/>
         <Modalities/>
         <Testimonials/>
+        <Embark/>
+        <Footer/>
       </div>
     </>
   )
